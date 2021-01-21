@@ -1,0 +1,77 @@
+/*VARIABLES*/
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+}
+
+/*MENU NAVEGACION*/
+.navbar {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+/*SLIDE*/
+.carousel-item {
+  height: 300px;
+}
+
+@media (min-width: 992px) {
+  .carousel-item {
+    height: 70vh !important;
+  }
+}
+.slide1 {
+  background-image: url(../img/slide1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide2 {
+  background-image: url(../img/slide2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.slide3 {
+  background-image: url(../img/slide3.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/*CONTENIDO PRINCIPAL*/
+@media (max-width: 575px) {
+  .fotoInicio {
+    height: 250px;
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .fotoInicio {
+    height: 350px;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .fotoInicio {
+    height: 450px;
+    width: 100%;
+  }
+}
+/* 2 cuadros de texto pagina Inicio*/
+.card-body {
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  text-align: justify;
+  border: 4px #a5c4d4 solid;
+}
+
+/*FOOTER*/
+footer {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  color: white;
+  border-radius: 1rem;
+}

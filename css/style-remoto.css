@@ -1,0 +1,37 @@
+body {
+  background-image: url(../img/fondocontacto.jpg);
+  background-size: cover;
+}
+
+/*MENU NAVEGACION*/
+.navbar {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+/*CONTENIDO PAGINA*/
+.frase .frase__title {
+  font-family: "Chivo", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+}
+.frase .frase__text {
+  font-family: "Chivo", sans-serif;
+  font-size: 1.25rem;
+  text-align: justify;
+}
+.frase .frase__button {
+  background-color: #a5c4d4;
+  color: black;
+}
+
+/*FOOTER*/
+footer {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  color: white;
+  border-radius: 1rem;
+}

@@ -1,0 +1,103 @@
+/*VARIABLES*/
+/*MENU NAVEGACION*/
+.navbar {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+/*PAGINA PRECIOS*/
+.fondoPrecios {
+  background-image: url(../img/fondoprecios.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tabla__contenido {
+  color: #c884a6;
+  font-size: 1.6rem;
+}
+
+.card {
+  color: #c884a6;
+  display: inline-block;
+  text-align: center;
+  padding-top: 10px;
+}
+.card .card-text {
+  text-align: justify;
+}
+
+.card:hover {
+  background-color: #a5c4d4 !important;
+  color: white;
+}
+
+.contenido__img {
+  width: 15rem;
+}
+
+/*CODIGO PARA CAMBIAR COMPORTAMIENTO DE TABLA EN MOVILES
+Se saco de la siguiente fuente https://stackoverflow.com/questions/28046506/bootstrap-responsive-table-change-rows-with-column
+y se modifico para utilizarla en la pagina.*/
+@media only screen and (max-width: 800px) {
+  /* Force table to not be like tables anymore */
+  .table-responsive table,
+.table-responsive thead,
+.table-responsive tbody,
+.table-responsive th,
+.table-responsive td,
+.table-responsive tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  .table-responsive thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .table-responsive tr {
+    border: 1px solid #ccc;
+  }
+
+  .table-responsive td {
+    /* Behave like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .table-responsive td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /*
+  Label the data
+  */
+  .table-responsive td:before {
+    content: attr(data-title);
+  }
+}
+/*FOOTER*/
+footer {
+  background-image: linear-gradient(to bottom, #890620, #C884A6);
+  font-family: "Chivo", sans-serif;
+  font-size: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
